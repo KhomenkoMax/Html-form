@@ -39,6 +39,25 @@ price.innerHTML=text;
 <BR><B><Big>Registration</Big></B></BR>
 <input type="text" name="login" size="20"maxlength="30"><B>Login</B><BR>
 <input type="password" name="password"><B>Password</B><BR>
+
+
+<? php
+$login=$_REQUEST['login'];
+$password=$_REQUEST['password'];
+if (($login=="Admin")&&($password=="111"))
+{echo "Привет, $login";
+}
+else
+{echo "Пошел вон!"
+}
+?>
+<p>Ваш логин: <?php echo htmlspecialchars($_POST['login']); ?>
+ <p>Ваш пароль:  <?php echo (int)$_POST['password']; ?> 
+<p><input type="submit" value="Подтвердить"  /></p>
+
+
+
+
 <br><input type="checkbox"><B>Замовити</B>
 <br><input type="checkbox"><B>Замовити</B>
 <br><input type="checkbox"><B>Замовити</B>
